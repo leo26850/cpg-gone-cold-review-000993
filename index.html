@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>CPG Gone Cold Revival Sequence — copy review</title>
+<style>
+  :root{
+    --ink:#15171a; --muted:#6b7280; --faint:#9aa1ab;
+    --line:#e4e7eb; --bg:#fbfbfa; --card:#ffffff;
+    --accent:#1f6feb; --warn:#b45309; --warnbg:#fff8ed;
+    --good:#0f7b4f; --quote:#f4f6f8;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:56px 24px 120px}
+  header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:40px}
+  .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);font-weight:600}
+  h1{font-size:32px;line-height:1.2;margin:12px 0 10px;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:15px;margin:0}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .tag{font-size:12px;border:1px solid var(--line);background:var(--card);
+       border-radius:999px;padding:4px 11px;color:var(--muted)}
+  .tag b{color:var(--ink);font-weight:600}
+  h2{font-size:21px;margin:52px 0 6px;letter-spacing:-.01em}
+  h2 .n{color:var(--faint);font-weight:400;margin-right:8px}
+  h3{font-size:16px;margin:32px 0 4px}
+  p{margin:12px 0}
+  a{color:var(--accent)}
+  .lede{color:var(--muted);font-size:15px;margin-top:2px}
+  .rule{height:1px;background:var(--line);border:0;margin:0}
+
+  .note{background:var(--warnbg);border:1px solid #f0d9b5;border-left:3px solid var(--warn);
+        padding:14px 16px;border-radius:6px;margin:20px 0;font-size:14.5px}
+  .note b{color:var(--warn)}
+
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14.5px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);font-weight:600}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted);width:70px}
+  .bar{display:block;height:3px;background:var(--accent);opacity:.75;border-radius:2px;margin-top:6px}
+
+  blockquote.ev{margin:14px 0;padding:12px 16px;background:var(--quote);
+    border-radius:6px;font-size:14.5px;color:#2b3038}
+  blockquote.ev cite{display:block;margin-top:7px;font-style:normal;font-size:12.5px;color:var(--faint)}
+
+  .email{background:var(--card);border:1px solid var(--line);border-radius:10px;
+         margin:22px 0 8px;overflow:hidden;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+  .email .hd{padding:16px 20px;border-bottom:1px solid var(--line);background:#fcfcfd}
+  .eid{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--accent)}
+  .etitle{font-size:17px;font-weight:650;margin:3px 0 0}
+  .trig{font-size:13.5px;color:var(--muted);margin:8px 0 0}
+  .trig b{color:var(--ink);font-weight:600}
+  .subj{padding:12px 20px;border-bottom:1px solid var(--line);font-size:14.5px;background:#fff}
+  .subj span{color:var(--faint);font-size:12px;text-transform:uppercase;letter-spacing:.07em;
+             margin-right:10px;font-weight:600}
+  .body{padding:20px 22px;white-space:pre-wrap;font-size:15px;line-height:1.72}
+  .slot{background:#eef4ff;color:#1a4fa0;border-radius:3px;padding:0 3px;
+        font-size:13.5px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  details{border-top:1px solid var(--line);background:#fcfcfd}
+  summary{padding:11px 20px;cursor:pointer;font-size:13px;color:var(--muted);
+          font-weight:600;list-style:none;user-select:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"▸ ";color:var(--faint)}
+  details[open] summary::before{content:"▾ "}
+  details .in{padding:2px 20px 18px;font-size:14px;color:var(--muted);line-height:1.65}
+  .wc{float:right;color:var(--faint);font-weight:400}
+
+  ol.items{padding-left:20px}
+  ol.items li{margin:14px 0}
+  ol.items b{display:block}
+  footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--line);
+         font-size:13px;color:var(--faint)}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+       background:#f1f3f5;border-radius:3px;padding:1px 4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">CPG Affiliate · Copy review</div>
+  <h1>Gone Cold Revival Sequence</h1>
+  <p class="sub">Seven emails for the brand-side nurture lane. Fills the copy gap left open at
+     section C of the proposal base deck copy, where the sequence currently stops at an
+     internal handoff note.</p>
+  <div class="meta">
+    <span class="tag">Drafted <b>2026-07-28</b></span>
+    <span class="tag">Status <b>draft for Kas review</b></span>
+    <span class="tag">Plane <b>CPG-180</b>, <b>CPG-104</b></span>
+    <span class="tag">Voice <b>Krik, first person</b></span>
+    <span class="tag">Evidence <b>199 cold-cohort calls</b></span>
+  </div>
+</header>
+
+<p>Everything below is written from the CPG Fireflies corpus rather than from doctrine alone.
+The objection and pain rankings come from <code>cpg-data-warehouse.cpg.fireflies_calls</code>
+restricted to the cold cohort; the verbatim quotes come from thirteen full transcripts of
+stalled deals between 2025-08 and 2026-02, pulled through the Fireflies API and read end to end.</p>
+
+<div class="note">
+  <b>Still missing:</b> the CPG team's sent-email corpus. The deck copy doc flags that no such
+  corpus exists to calibrate against, and that is still true. Every email below is derived from
+  spoken language on calls, not from what has actually been sent and replied to.
+</div>
+
+<h2><span class="n">01</span>The governing principle</h2>
+<p class="lede">Trigger-based, never time-based.</p>
+<p>Section 6.2 of the 2-call SOP is explicit about the nurture lane: one email every 2 to 4 weeks,
+<em>“each anchored to a REAL trigger. No trigger, no email.”</em></p>
+<p>That is the single biggest difference from section C. Touches 1 through 3 fire on a clock.
+Everything here fires on an <b>event</b>. If no event has occurred, the correct number of emails
+to send is zero. The only clock-driven email in the set is E7, and it fires at most once every
+twelve months.</p>
+<p>So the sequence has no fixed length. A deal can sit in the lane for a year and receive two
+emails, or receive four in a quarter because their season landed and their Meta costs moved.
+Both are correct.</p>
+
+<h2><span class="n">02</span>Evidence base</h2>
+<p class="lede">Cold cohort: <code>outcome IN ('proposal-sent','follow-up','closed-lost')</code>, n = 199 calls.</p>
+
+<table>
+  <thead><tr><th>Objection</th><th class="num">Calls</th><th>Pain point</th><th class="num">Calls</th></tr></thead>
+  <tbody>
+    <tr><td>timing<span class="bar" style="width:100%"></span></td><td class="num">80</td>
+        <td>scaling<span class="bar" style="width:100%"></span></td><td class="num">146</td></tr>
+    <tr><td>integration<span class="bar" style="width:96%"></span></td><td class="num">77</td>
+        <td>reporting<span class="bar" style="width:98%"></span></td><td class="num">143</td></tr>
+    <tr><td>existing-vendor<span class="bar" style="width:95%"></span></td><td class="num">76</td>
+        <td>attribution<span class="bar" style="width:83%"></span></td><td class="num">121</td></tr>
+    <tr><td>not-decision-maker<span class="bar" style="width:95%"></span></td><td class="num">76</td>
+        <td>tech-stack<span class="bar" style="width:47%"></span></td><td class="num">69</td></tr>
+    <tr><td>trust<span class="bar" style="width:81%"></span></td><td class="num">65</td>
+        <td>client-churn<span class="bar" style="width:23%"></span></td><td class="num">34</td></tr>
+    <tr><td>pricing<span class="bar" style="width:65%"></span></td><td class="num">52</td>
+        <td>team-bandwidth<span class="bar" style="width:13%"></span></td><td class="num">19</td></tr>
+    <tr><td>capacity<span class="bar" style="width:36%"></span></td><td class="num">29</td><td></td><td class="num"></td></tr>
+    <tr><td>team-buy-in<span class="bar" style="width:20%"></span></td><td class="num">16</td><td></td><td class="num"></td></tr>
+    <tr><td>compliance<span class="bar" style="width:19%"></span></td><td class="num">15</td><td></td><td class="num"></td></tr>
+    <tr><td>product-fit<span class="bar" style="width:11%"></span></td><td class="num">9</td><td></td><td class="num"></td></tr>
+  </tbody>
+</table>
+
+<p><b>Timing is the number one stall shape.</b> That is exactly the objection a trigger-based
+lane is built to solve, because it expires on its own. The only question is whether we are still
+in the room when it does.</p>
+
+<h3>The quotes each email is built on</h3>
+
+<blockquote class="ev">“we see just massive spikes for our brand comparative to other competitors
+around Valentine's Day, Father's Day and Q4”
+<cite>Collin Phelan, righteousfelon, 2026-01-15 · drives E1</cite></blockquote>
+
+<blockquote class="ev">“every big holiday, Maura will reach out and say, hey, this holiday is coming”
+<cite>Krik, on the motion already running for live clients · E1 extends it to the nurture lane</cite></blockquote>
+
+<blockquote class="ev">“if it does work, like right now we're spending shoot 40k a day on Meta”
+<cite>Timothy Short, rapidradios, 2026-01-14 · drives E2</cite></blockquote>
+
+<blockquote class="ev">“I don't do meta, I don't do Google because every brand's already doing that”
+<br>“I typically benchmark versus meta and I go like 10, 15% lower than meta”
+<cite>Krik, same corpus · E2's differentiation and its permitted guarantee shape</cite></blockquote>
+
+<blockquote class="ev">“Just to be blunt, I do not have extra marketing budget right now.”
+<br>“Let's just circle back maybe in a couple of months.”
+<cite>Graham Sorkin, funcho, 2026-01-22 · drives E4, the cleanest revival instruction in the corpus</cite></blockquote>
+
+<blockquote class="ev">“my internal team told me that this deal is kind of stuck and they asked me
+to have a talk with you guys”
+<cite>Lei Yang, totwoo, 2026-02-03 · drives E5</cite></blockquote>
+
+<blockquote class="ev">“we're probably gonna take a while to get back to you, but I think it's gonna
+be quite an easy account to work with”
+<cite>Chris Gould's team, 2026-01 · slow is not dead, and the corpus says so out loud</cite></blockquote>
+
+<h2><span class="n">03</span>Entry, exit, suppression</h2>
+<table>
+  <tbody>
+  <tr><th style="width:150px">Entry</th><td>Only after the break-up touch has been sent and gone unanswered.
+      Attio label stays <b>nurture network lead</b>. The words “gone cold lead” never appear on a
+      brand-side record, so the title of this page is internal vocabulary only.</td></tr>
+  <tr><th>Exit, upward</th><td>Any reply flips the deal back to active and is answered by Krik
+      personally, not by the next scheduled touch.</td></tr>
+  <tr><th>Never enters</th><td>“Send me the deck” plus “not sure there's a fit” (archive).
+      Deck plus references plus “contact me end of year” (downshift). Silent or monosyllabic
+      right after price (soft-DQ). Anti-ICP or hard-gated.
+      <b>New:</b> concessions already stacked before the deal died. A waiver rescues an energy
+      match, not a dead deal. Those get E3 and E7 only.</td></tr>
+  <tr><th>Cadence ceiling</th><td>One email per 4 weeks no matter how many triggers fire. If a
+      season and a Meta spike land in the same fortnight, send E1 and hold E2. Two triggers do
+      not license two emails.</td></tr>
+  <tr><th>Hard stop</th><td>Three consecutive trigger-anchored emails with zero opens drops the
+      deal to E7-only. Any explicit opt-out ends everything immediately.</td></tr>
+  </tbody>
+</table>
+
+<h2><span class="n">04</span>The seven emails</h2>
+<p class="lede">Six event-triggered, one annual. Production notes are internal and never rendered
+to a prospect.</p>
+
+<!-- E1 -->
+<div class="email">
+  <div class="hd">
+    <div class="eid">E1</div>
+    <p class="etitle">Their season is approaching</p>
+    <p class="trig"><b>Trigger:</b> a real, named seasonal spike for this brand is 4 to 8 weeks out
+       [DRAFT-CADENCE]. Their season, not a generic retail calendar.</p>
+  </div>
+  <div class="subj"><span>Subject</span><span class="slot">{{seasonal_trigger}}</span> is close</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+<span class="slot">{{seasonal_trigger}}</span> is about <span class="slot">{{weeks_out}}</span> weeks out, and when we spoke you told me it is one of the spikes that actually moves the year for <span class="slot">{{brand_name}}</span>.
+
+We are lining up publisher inventory for that window now. If you want me to hold a slot for <span class="slot">{{brand_name}}</span>, tell me and I will put one aside. If the timing is still wrong, that is genuinely fine, and I will watch for the next one.
+
+Everything we scoped stays true: <span class="slot">{{proposed_CPA}}</span> per verified new customer, benchmarked below your Meta CAC, and live about two weeks from paperwork.
+
+Krik</div>
+  <details><summary>Production notes <span class="wc">108 words</span></summary>
+    <div class="in">The strongest trigger in the corpus, because it is the prospect's own stated
+    commercial rhythm rather than our calendar, and because Mora already runs the identical motion
+    for live clients. <span class="slot">{{seasonal_trigger}}</span> must be real and specific to
+    the brand; a generic “Q4 is coming” breaks the no-fake-urgency rule and should fail the human
+    gate. The slot-hold is a real scarcity statement only if inventory is genuinely being
+    allocated. If it is not, cut that paragraph rather than invent it.</div>
+  </details>
+</div>
+
+<!-- E2 -->
+<div class="email">
+  <div class="hd">
+    <div class="eid">E2</div>
+    <p class="etitle">Their Meta costs moved</p>
+    <p class="trig"><b>Trigger:</b> verifiable evidence that paid-social acquisition cost has
+       deteriorated for this brand or its category. Research agent proposes, Kas verifies before send.</p>
+  </div>
+  <div class="subj"><span>Subject</span>Your Meta number</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+Not selling you anything today. <span class="slot">{{meta_cost_evidence}}</span>, and when we spoke your blended CAC was <span class="slot">{{their_CAC}}</span>.
+
+The reason I do not run Meta or Google is that every brand is already in that auction, so when it gets expensive there is nowhere to hide. What we run is placements you are not in yet, priced per verified new customer instead of per impression.
+
+If your number has moved since <span class="slot">{{call_date}}</span>, that is worth fifteen minutes: <span class="slot">{{krik_calendar_link}}</span>
+
+If it has not, ignore me and have a strong quarter.
+
+Krik</div>
+  <details><summary>Production notes <span class="wc">106 words</span></summary>
+    <div class="in">Built on Krik's verbatim differentiation and his benchmark discipline.
+    <span class="slot">{{meta_cost_evidence}}</span> must be a checkable claim, not a vibe. The
+    permitted guarantee shape appears here as a RATE benchmarked to their CAC and nothing more.
+    The closing line is the abundance posture doing real work: it gives them a costless exit,
+    which is what keeps the door open for E1 later.</div>
+  </details>
+</div>
+
+<!-- E3 -->
+<div class="email">
+  <div class="hd">
+    <div class="eid">E3</div>
+    <p class="etitle">A publisher worth knowing about, no ask</p>
+    <p class="trig"><b>Trigger:</b> a genuinely relevant publisher or placement has entered the
+       network since the deal went cold. The only email safe to send to a concessions-stacked
+       deal, because it asks for nothing.</p>
+  </div>
+  <div class="subj"><span>Subject</span>Something for <span class="slot">{{brand_name}}</span>, no reply needed</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+No response needed on this one.
+
+We brought <span class="slot">{{publisher_descriptor}}</span> into the network this month, and it is the placement I had in mind for <span class="slot">{{brand_name}}</span> when we spoke. <span class="slot">{{publisher_rationale}}</span>
+
+I am not asking you for anything. I said I would only reach out when there was something genuinely useful, and this is the first thing that cleared that bar.
+
+If you ever want to look at it, you know where I am.
+
+Krik</div>
+  <details><summary>Production notes <span class="wc">82 words, zero asks</span></summary>
+    <div class="in">Direct descendant of Touch 3's value-drop logic and of the break-up promise
+    (“I will only reach out from here when we have something genuinely useful”), which this email
+    explicitly honours. That callback is the point: it proves the break-up email was true, which
+    is what buys credibility for E1 and E2. No named brands unless they are on the 9-name
+    whitelist.</div>
+  </details>
+</div>
+
+<!-- E4 -->
+<div class="email">
+  <div class="hd">
+    <div class="eid">E4</div>
+    <p class="etitle">The budget cycle they named has come around</p>
+    <p class="trig"><b>Trigger:</b> the prospect stated a return window on the call and it has
+       arrived. The 6-month timer for frozen-budget and tariff deals lands here too.</p>
+  </div>
+  <div class="subj"><span>Subject</span>You said a couple of months</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+When we spoke on <span class="slot">{{call_date}}</span> you were straight with me. The budget was not there right then, and you said to come back in <span class="slot">{{stated_return_window}}</span>. This is me doing that.
+
+Nothing has changed on our side. The setup fee is the only fee that exists. The budget is not a fee either, it is your money, protected in a middleman account, and it only spends when it generates what we agreed. Whatever goes unused stays refundable.
+
+If the picture has changed for <span class="slot">{{brand_name}}</span>, fifteen minutes and we pick it straight back up: <span class="slot">{{krik_calendar_link}}</span>
+
+Krik</div>
+  <details><summary>Production notes <span class="wc">117 words</span></summary>
+    <div class="in">The highest-intent email in the lane and the one with the least room for
+    cleverness, because the prospect wrote the brief himself. Quoting their own window back is the
+    entire mechanism, so <span class="slot">{{stated_return_window}}</span> must be their words.
+    Full escrow reframe is present because money is mentioned. Tier numbers stay out of the email,
+    per the section B precedent.</div>
+  </details>
+</div>
+
+<!-- E5 -->
+<div class="email">
+  <div class="hd">
+    <div class="eid">E5</div>
+    <p class="etitle">The internal blocker has moved</p>
+    <p class="trig"><b>Trigger:</b> evidence the stall was structural rather than commercial. A
+       named absent decision-maker changed role, the champion resurfaced, or the notes recorded an
+       explicit internal stall. Do not fire on a guess.</p>
+  </div>
+  <div class="subj"><span>Subject</span>Worth another run with <span class="slot">{{absent_decision_maker}}</span>?</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+Last time, this stalled internally. That happens constantly and it is nobody's fault.
+
+If it would help, I am happy to run the whole thing again with <span class="slot">{{absent_decision_maker}}</span> in the room. Thirty minutes, no new document needed. I am truthfully going to try to gain about 2 percent of your DTC revenue here, so it is worth whoever owns the P&amp;L hearing it directly rather than reading it secondhand.
+
+If the answer is still no, just say so and I will leave it with you.
+
+<span class="slot">{{krik_calendar_link}}</span>
+
+Krik</div>
+  <details><summary>Production notes <span class="wc">103 words</span></summary>
+    <div class="in">Carries Krik's verbatim “about 2 percent of your DTC revenue” line, already
+    load-bearing in Touch 1 and consistent with bounded ambition. Targets the 76 cold-cohort calls
+    tagged not-decision-maker and the SOP's finding that 28 percent of deals die on internal
+    approval. “No new document needed” removes the cost of re-engaging, which is the actual
+    barrier for a champion who already spent capital once. Never re-send the original proposal as
+    the nudge.</div>
+  </details>
+</div>
+
+<!-- E6 -->
+<div class="email">
+  <div class="hd">
+    <div class="eid">E6</div>
+    <p class="etitle">Proof against the objection that killed it</p>
+    <p class="trig"><b>Trigger:</b> a whitelisted case or shippable artifact now answers the
+       specific objection on the dead deal. Attribution is the highest-volume use at 121 calls.</p>
+  </div>
+  <div class="subj"><span>Subject</span>On the <span class="slot">{{objection_theme}}</span> question you raised</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+You raised <span class="slot">{{their_stated_concern}}</span> when we spoke. It was a fair challenge and I did not have a clean answer for you at the time.
+
+I do now. <span class="slot">{{proof_artifact}}</span>
+
+Short version: we bill only on verified net new customers, we match on view-through so nobody else can claim what we drove, and you watch all of it on a live dashboard in real time instead of waiting on a monthly report.
+
+If that changes the maths for <span class="slot">{{brand_name}}</span>, I am around: <span class="slot">{{krik_calendar_link}}</span>
+
+Krik</div>
+  <details><summary>Production notes <span class="wc">108 words</span></summary>
+    <div class="in">“I did not have a clean answer at the time” is the one moment of concession in
+    the lane and it is deliberate: it is the highest-trust move available against a trust
+    objection, and it earns the right to re-open. It must be TRUE for the specific deal, so the
+    human gate checks the call notes before this sends.
+    <span class="slot">{{proof_artifact}}</span> is whitelist-only; Audien is the established
+    attribution case. The three-part short version is Krik's own corpus language on attribution,
+    compressed.</div>
+  </details>
+</div>
+
+<!-- E7 -->
+<div class="email">
+  <div class="hd">
+    <div class="eid">E7</div>
+    <p class="etitle">The dormant one-liner</p>
+    <p class="trig"><b>Trigger:</b> none. At most once per 12 months for deals with no other
+       trigger, and the terminal state for hard-stopped deals. The only clock-driven email here.</p>
+  </div>
+  <div class="subj"><span>Subject</span>Still here</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+Once a year I send a short note to the people I enjoyed talking to, with nothing attached to it.
+
+<span class="slot">{{brand_name}}</span> is on that list. If affiliate ever comes back onto your roadmap, you know where I am.
+
+Hope it is a strong year.
+
+Krik</div>
+  <details><summary>Production notes <span class="wc">52 words</span></summary>
+    <div class="in">Costs nothing, ages well, and keeps the address warm without ever becoming the
+    thing that gets Krik marked as spam. No link, no calendar, no artifact, deliberately. If this
+    is the only email a deal ever gets again, the relationship still ends in a good place.</div>
+  </details>
+</div>
+
+<h2><span class="n">05</span>New personalization slots</h2>
+<p class="lede">Not yet in the deck-copy registry. Must be added when this merges as Section E.</p>
+<table>
+  <thead><tr><th>Slot</th><th>Source</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td><code>{{weeks_out}}</code></td><td>Computed from season date</td><td>Integer, 4 to 8</td></tr>
+    <tr><td><code>{{meta_cost_evidence}}</code></td><td>Research agent</td><td>Verifiable; Kas checks before send</td></tr>
+    <tr><td><code>{{publisher_descriptor}}</code></td><td>Network additions feed</td><td>Category, not a named brand unless whitelisted</td></tr>
+    <tr><td><code>{{publisher_rationale}}</code></td><td>Research agent</td><td>One line on fit to vertical</td></tr>
+    <tr><td><code>{{stated_return_window}}</code></td><td>Call notes</td><td>Prospect's own words, quoted back</td></tr>
+    <tr><td><code>{{objection_theme}}</code></td><td>Objection tag</td><td>e.g. “attribution”, “measurement”</td></tr>
+    <tr><td><code>{{proof_artifact}}</code></td><td>Selection by objection</td><td>Whitelist only</td></tr>
+  </tbody>
+</table>
+
+<h2><span class="n">06</span>Open items for Kas</h2>
+<ol class="items">
+  <li><b>Trigger detection is unbuilt.</b>
+    E1, E2, E3 and E6 all assume something is watching for the trigger. Nothing is. Until CPG-180
+    automates it, this lane runs off a manual monthly review of the nurture list, which is the
+    honest status and should be resourced as such rather than assumed away.</li>
+  <li><b>E4 needs a field that does not exist.</b>
+    <code>{{stated_return_window}}</code> has to be captured on the call and written to Attio at
+    the moment the deal dies. No current field holds it. Without it E4 cannot fire, and it is the
+    highest-intent email here.</li>
+  <li><b>[DRAFT-CADENCE] on E1's 4 to 8 week window and E7's 12 months.</b>
+    Both inferred. The corpus gives one data point on lead time, Collin Phelan's “two weeks from
+    now”, which is shorter than what E1 assumes.</li>
+  <li><b>Vocabulary conflict, needs a ruling.</b>
+    SOP 6.2 bans “gone cold” on brand-side records in favour of “nurture network lead”, but the
+    recruitment pipeline uses <code>gone_cold</code> as a formal stage. This keeps “gone cold” as
+    internal vocabulary only. Confirm before anything ships into Attio.</li>
+  <li><b>Suppression against live cold-email campaigns.</b>
+    A prospect in this lane may also sit in an Instantly or Bison sequence. Nothing currently
+    prevents both firing in the same week. Needs a cross-check before go-live.</li>
+</ol>
+
+<footer>
+  Source of truth: <code>kamg-ops/clients/cpg/prds/cpg-gone-cold-revival-sequence-2026-07-28.md</code><br>
+  Format rules verified: no em-dashes, no emojis, no tables or testimonials inside email bodies,
+  escrow reframe on every money mention, CPA-rate-only guarantee, ISO 8601 dates.<br>
+  Temporary review page, noindex. Delete the repo once reviewed.
+</footer>
+
+</div>
+</body>
+</html>
