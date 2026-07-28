@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>CPG Gone Cold Revival Sequence, copy review</title>
+<title>CPG Gone Cold Revival Sequences, copy review</title>
 <style>
   :root{
     --ink:#15171a; --muted:#6b7280; --faint:#9aa1ab;
@@ -102,32 +102,221 @@
 
 <header>
   <div class="kicker">CPG Affiliate · Copy review</div>
-  <h1>Gone Cold Revival Sequence</h1>
-  <p class="sub">Thirteen emails for the brand-side nurture lane: seven trigger emails and six
-     follow-ups. Fills the copy gap left open at section C of the proposal base deck copy, where
-     the sequence currently stops at an internal handoff note.</p>
+  <h1>Gone Cold Revival Sequences</h1>
+  <p class="sub">Two lanes for two populations that share a label and nothing else.
+     <b>Lane A</b> is the general lane for cold outbound leads who never engaged, and is the one
+     being built now. <b>Lane B</b> covers deals that had calls and went cold after a proposal.</p>
   <div class="meta">
     <span class="tag">Drafted <b>2026-07-28</b></span>
     <span class="tag">Status <b>draft for Kas review</b></span>
     <span class="tag">Plane <b>CPG-180</b>, <b>CPG-104</b></span>
-    <span class="tag">Voice <b>Krik, first person</b></span>
-    <span class="tag">Evidence <b>199 cold-cohort calls</b></span>
-    <span class="tag"><b>7</b> triggers + <b>6</b> follow-ups</span>
+    <span class="tag">Lane A <b>4 emails, Julieta</b></span>
+    <span class="tag">Lane B <b>7 + 6, Krik</b></span>
   </div>
 </header>
 
-<p>Everything below is written from the CPG Fireflies corpus rather than from doctrine alone.
-The objection and pain rankings come from <code>cpg-data-warehouse.cpg.fireflies_calls</code>
-restricted to the cold cohort; the verbatim quotes come from thirteen full transcripts of
-stalled deals between 2025-08 and 2026-02, pulled through the Fireflies API and read end to end.</p>
+<table>
+  <thead><tr><th style="width:34%"></th><th>Lane A, general (primary)</th><th>Lane B, deal-side</th></tr></thead>
+  <tbody>
+    <tr><th>Who</th><td>Ran the outbound ladder, never engaged. No call, no proposal, usually no
+        reply at all.</td><td>Reached a call or proposal, then died.</td></tr>
+    <tr><th>Sender</th><td><b>Julieta</b>. These leads have never heard of Krik.</td><td>Krik.</td></tr>
+    <tr><th>Fires on</th><td><b>A clock.</b> No call notes means no triggers exist to watch.</td>
+        <td>Events, from call notes.</td></tr>
+    <tr><th>Personalization</th><td>Enrichment and research only.</td><td>Quotes the prospect back
+        to themselves.</td></tr>
+    <tr><th>Emails</th><td>4 (G1 to G4), roughly 31 days.</td><td>7 triggers + 6 follow-ups.</td></tr>
+    <tr><th>Calibrated against</th><td><b>600,887 sends, 1,800 replies.</b> A real sent-email
+        corpus.</td><td>199 cold-cohort calls. No sent-email corpus exists.</td></tr>
+  </tbody>
+</table>
 
 <div class="note">
-  <b>Still missing:</b> the CPG team's sent-email corpus. The deck copy doc flags that no such
-  corpus exists to calibrate against, and that is still true. Every email below is derived from
-  spoken language on calls, not from what has actually been sent and replied to.
+  <b>The lanes are not variants of each other.</b> Every Lane B email works by quoting the
+  prospect back to themselves from call notes. Lane A leads never had a call, so not one of those
+  mechanisms is available. That is why Lane A is clocked rather than triggered, and why it is
+  written as a re-approach rather than a follow-up.
 </div>
 
-<h2><span class="n">01</span>The governing principle</h2>
+<h2><span class="n">01</span>Lane A: the general sequence</h2>
+<p class="lede">Cold outbound leads who never engaged. The primary build.</p>
+
+<h3>Why this is a different problem</h3>
+<p>Roughly <b>98 percent of this population never replied at all</b>. Across 176,000 step-1 sends
+the reply rate is 1.86 percent. There is no relationship to revive, so the copy should not open
+with “just following up” on an email nobody opened. It reads as a lie to anyone who checks.</p>
+
+<h3>Ladder performance, all campaigns</h3>
+<table>
+  <thead><tr><th>Step</th><th class="num">Sent</th><th class="num">Replies</th><th class="num">Reply rate</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td class="num">176,000</td><td class="num">3,274</td><td class="num">1.86%</td></tr>
+    <tr><td>2</td><td class="num">154,254</td><td class="num">2,296</td><td class="num">1.49%</td></tr>
+    <tr><td>3</td><td class="num">147,783</td><td class="num">1,125</td><td class="num">0.76%</td></tr>
+    <tr><td>4</td><td class="num">107,709</td><td class="num">774</td><td class="num">0.72%</td></tr>
+    <tr><td><b>5</b></td><td class="num">15,141</td><td class="num">126</td><td class="num"><b>0.83%</b></td></tr>
+  </tbody>
+</table>
+<p><b>Step 5 goes up, not down.</b> The break-up out-performs the two chases before it. That is
+the most useful number here, and G4 is built directly on it.</p>
+
+<h3>What the 536 human negative replies actually say</h3>
+<table>
+  <thead><tr><th>Segment</th><th class="num">n</th><th class="num">Share</th><th>Disposition</th></tr></thead>
+  <tbody>
+    <tr><td>Reflexive one-liner (“no”, “pass”)</td><td class="num">228</td><td class="num">42.5%</td><td>6-month cooling, then G1 and G4 only</td></tr>
+    <tr><td>Other / signature noise</td><td class="num">172</td><td class="num">32.1%</td><td>Manual triage</td></tr>
+    <tr><td>Explicit unsubscribe</td><td class="num">87</td><td class="num">16.2%</td><td><b>Permanent suppression</b></td></tr>
+    <tr><td>Timing (“not now”)</td><td class="num">36</td><td class="num">6.7%</td><td><b>Prime target, full G-series</b></td></tr>
+    <tr><td>Bad data (wrong person, closed)</td><td class="num">5</td><td class="num">0.9%</td><td>Data cleanup, never re-send</td></tr>
+    <tr><td>Existing vendor</td><td class="num">4</td><td class="num">0.7%</td><td>Full G-series</td></tr>
+    <tr><td>Routed to a colleague</td><td class="num">4</td><td class="num">0.7%</td><td>Re-target colleague as a NEW lead</td></tr>
+  </tbody>
+</table>
+
+<p><b>Both yes and no arrive in one to five words.</b> Negatives: “no”, “pass”, “Nope”, “not now”.
+Positives: “sure”, “Lets chat”, “Sure send over details”. Nobody writes paragraphs to a cold
+email, so every Lane A email is answerable in one word, and G2 is built entirely around that.</p>
+
+<blockquote class="ev">“Sure, how is affiliate revenue attributed and tracked? (this matters a lot)”
+<cite>The one substantive question people actually ask. Matches the 121 Lane B calls tagged
+attribution, and is why G3 leads with it.</cite></blockquote>
+
+<div class="note">
+  <b>Suppression is the most important part of this lane.</b> Lane A mails people who already
+  ignored four or five emails, and 16.2 percent of everyone who bothered to reply asked to be
+  removed. The eight-plus rotating sending domains are the asset at risk, not the leads. Any
+  unsubscribe ever recorded means permanent exclusion, no expiry, no exceptions. Batch the sends,
+  cap per domain per day, and halt the lane automatically if complaint rate rises.
+</div>
+
+<h3>Expected performance, stated honestly</h3>
+<p>Baseline ladder reply rates run 0.72 to 1.86 percent. Lane A targets people who already
+declined to answer that ladder, so expect it to land <b>at or below the low end</b>, near 0.5 to
+1 percent. On a 10,000-lead revival that is roughly 50 to 100 replies, most of them one word.
+Worth doing at this cost. Not a pipeline fix, and should not be presented as one.</p>
+
+<h3>The four emails</h3>
+<p class="lede">G1, then G2 at +7 days, G3 at +10, G4 at +14 [DRAFT-CADENCE]. Roughly 31 days.
+No separate follow-ups: here the sequence <em>is</em> the follow-up chain.</p>
+
+<div class="email">
+  <div class="hd">
+    <div class="eid">G1</div>
+    <p class="etitle">A different reason, not a follow-up</p>
+    <p class="trig"><b>Fires:</b> on entry to the lane, 30 days after the ladder is exhausted with
+       no engagement.</p>
+  </div>
+  <div class="subj"><span>Subject</span>One idea for <span class="slot">{{brand_name}}</span></div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+We reached out a while back and it went nowhere, which usually means the timing was wrong or it landed in a bad week.
+
+Different reason this time. <span class="slot">{{specific_observation}}</span>
+
+What we do is performance affiliate for <span class="slot">{{vertical}}</span> brands, and we are paid per verified new customer rather than per impression or on a retainer.
+
+If that is not relevant, one word back and I will close the file properly.
+
+<span class="slot">{{sender_name}}</span></div>
+  <details><summary>Production notes <span class="wc">88 words</span></summary>
+    <div class="in">Opens by naming the silence rather than pretending a relationship exists.
+    <span class="slot">{{specific_observation}}</span> must be a real, checkable observation about
+    their site, catalogue or channel mix, produced by the research agent and spot-checked. It is
+    the only genuine personalization available in this lane and the email is weak without it.
+    “One word back” is written directly to the observed reply behaviour.</div>
+  </details>
+</div>
+
+<div class="email">
+  <div class="hd">
+    <div class="eid">G2</div>
+    <p class="etitle">The one-question email</p>
+    <p class="trig"><b>Fires:</b> 7 days after G1. Highest expected yield in the lane.</p>
+  </div>
+  <div class="subj"><span>Subject</span>Yes or no is fine</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+Short one, and a yes or no is genuinely enough.
+
+Is affiliate something <span class="slot">{{brand_name}}</span> is looking at in the next six months?
+
+If yes, I will send one page on how we would run it, and nothing else. If no, I will stop here and you will not hear from me again this year.
+
+<span class="slot">{{sender_name}}</span></div>
+  <details><summary>Production notes <span class="wc">71 words</span></summary>
+    <div class="in">The corpus says both acceptances and rejections arrive in one to five words,
+    so this makes a one-word answer the correct and complete response instead of fighting it.
+    Both branches must be honoured literally: a “no” moves the record to dormant that day. If the
+    team does not honour the “no” branch, this email stops working and deserves to.</div>
+  </details>
+</div>
+
+<div class="email">
+  <div class="hd">
+    <div class="eid">G3</div>
+    <p class="etitle">Proof, no ask</p>
+    <p class="trig"><b>Fires:</b> 10 days after G2. Skip entirely rather than send with a weak
+       proof line.</p>
+  </div>
+  <div class="subj"><span>Subject</span>For <span class="slot">{{brand_name}}</span>, nothing needed</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+No reply needed on this one.
+
+<span class="slot">{{proof_line}}</span>
+
+That is the whole message. If affiliate moves up the list for <span class="slot">{{brand_name}}</span>, the shape is simple: we are paid per verified new customer, we only count net new, and you see every one of them on a live dashboard rather than in a monthly report.
+
+<span class="slot">{{sender_name}}</span></div>
+  <details><summary>Production notes <span class="wc">72 words, zero asks</span></summary>
+    <div class="in">Leads with attribution because that is the one substantive question the corpus
+    shows people actually asking. A value drop with nothing of value in it is just a fourth chase,
+    so skip this email rather than send a weak
+    <span class="slot">{{proof_line}}</span>. Whitelist names only.</div>
+  </details>
+</div>
+
+<div class="email">
+  <div class="hd">
+    <div class="eid">G4</div>
+    <p class="etitle">Close the file</p>
+    <p class="trig"><b>Fires:</b> 14 days after G3. <b>Evidence-backed as the highest-yield final
+       touch:</b> step 5 replies at 0.83% against step 4's 0.72%.</p>
+  </div>
+  <div class="subj"><span>Subject</span>Closing the file</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+I am going to close the file on <span class="slot">{{brand_name}}</span>, and there are no hard feelings in it.
+
+For what it is worth, brands usually come back to this for one of two reasons: paid costs climb far enough that paying per customer starts to look sane, or a season lands where they need volume they cannot buy fast enough.
+
+If either happens, reply to this email and it picks straight back up.
+
+<span class="slot">{{sender_name}}</span></div>
+  <details><summary>Production notes <span class="wc">92 words</span></summary>
+    <div class="in">Naming the two return reasons gives the reader a way to self-identify later
+    without us needing a trigger feed we do not have. No guilt language, no last-chance framing,
+    no fake deadline. After G4 the record goes dormant and routes to the E7 annual note, or to
+    permanent suppression if anything on the suppression list fired.</div>
+  </details>
+</div>
+
+<h2><span class="n">02</span>Lane B: deal-side revival</h2>
+<p class="lede">Deals that reached a call or proposal, then died. Krik's voice, trigger-based.</p>
+
+<p>Everything in Lane B is written from the CPG Fireflies corpus. The objection and pain rankings
+come from <code>cpg-data-warehouse.cpg.fireflies_calls</code> restricted to the cold cohort; the
+verbatim quotes come from thirteen full transcripts of stalled deals between 2025-08 and 2026-02,
+pulled through the Fireflies API and read end to end.</p>
+
+<div class="note">
+  <b>Lane B has no sent-email corpus.</b> The deck copy doc flags that none exists to calibrate
+  against, and that is still true for the deal side. Every Lane B email is derived from spoken
+  language on calls. Lane A does not have this problem.
+</div>
+
+<h3>The governing principle</h3>
 <p class="lede">Trigger-based, never time-based.</p>
 <p>Section 6.2 of the 2-call SOP is explicit about the nurture lane: one email every 2 to 4 weeks,
 <em>“each anchored to a REAL trigger. No trigger, no email.”</em></p>
@@ -139,7 +328,7 @@ twelve months.</p>
 emails, or receive four in a quarter because their season landed and their Meta costs moved.
 Both are correct.</p>
 
-<h2><span class="n">02</span>Evidence base</h2>
+<h3>Evidence base</h3>
 <p class="lede">Cold cohort: <code>outcome IN ('proposal-sent','follow-up','closed-lost')</code>, n = 199 calls.</p>
 
 <table>
@@ -196,7 +385,7 @@ to have a talk with you guys”
 be quite an easy account to work with”
 <cite>Chris Gould's team, 2026-01 · slow is not dead, and the corpus says so out loud</cite></blockquote>
 
-<h2><span class="n">03</span>Entry, exit, suppression</h2>
+<h3>Entry, exit, suppression</h3>
 <table>
   <tbody>
   <tr><th style="width:150px">Entry</th><td>Only after the break-up touch has been sent and gone unanswered.
@@ -217,7 +406,7 @@ be quite an easy account to work with”
   </tbody>
 </table>
 
-<h2><span class="n">04</span>Follow-up rules</h2>
+<h3>Follow-up rules</h3>
 <p class="lede">Each trigger email gets at most one follow-up, shown indented beneath its parent.</p>
 
 <div class="note">
@@ -249,7 +438,7 @@ be quite an easy account to work with”
   </tbody>
 </table>
 
-<h2><span class="n">05</span>The emails</h2>
+<h3>The emails</h3>
 <p class="lede">Seven triggers, six follow-ups. Production notes are internal and never rendered
 to a prospect.</p>
 
@@ -614,7 +803,7 @@ Krik</div>
   at all, it is a decision to move the record out of the lane and stop emailing.
 </div>
 
-<h2><span class="n">06</span>New personalization slots</h2>
+<h2><span class="n">03</span>New personalization slots</h2>
 <p class="lede">Not yet in the deck-copy registry. Must be added when this merges as Section E.</p>
 <table>
   <thead><tr><th>Slot</th><th>Source</th><th>Notes</th></tr></thead>
@@ -631,7 +820,17 @@ Krik</div>
   </tbody>
 </table>
 
-<h2><span class="n">07</span>Open items for Kas</h2>
+<p class="lede">Lane A slots. None come from call notes, because Lane A leads never had a call.</p>
+<table>
+  <thead><tr><th>Slot</th><th>Source</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td><code>{{sender_name}}</code></td><td>Ops</td><td>Defaults to Julieta Oyanedel. Never Krik in Lane A</td></tr>
+    <tr><td><code>{{specific_observation}}</code></td><td>Research agent</td><td>G1. Must be real and checkable. The only genuine personalization in this lane</td></tr>
+    <tr><td><code>{{proof_line}}</code></td><td>Selection by vertical</td><td>G3. Whitelist only. Skip G3 rather than send a weak one</td></tr>
+  </tbody>
+</table>
+
+<h2><span class="n">04</span>Open items for Kas</h2>
 <ol class="items">
   <li><b>Trigger detection is unbuilt.</b>
     E1, E2, E3 and E6 all assume something is watching for the trigger. Nothing is. Until CPG-180
@@ -662,6 +861,38 @@ Krik</div>
   <li><b>F5 promises a one-pager that does not exist.</b>
     The forwardable internal page has to be built before F5 can send. It is close to the parked
     case one-pager backlog item in build plan section 5 and could share that work.</li>
+</ol>
+
+<h3>Lane A items, which are the ones that matter now</h3>
+<ol class="items" start="9">
+  <li><b>Confirm the re-approach rule for reflexive “no” replies.</b>
+    228 leads, 42.5 percent of all negatives, said some version of “no” in one word. My call is
+    6-month cooling then G1 and G4 only. A one-word no to a cold email evaluated nothing, and it
+    is not an unsubscribe under CAN-SPAM, so re-approach is lawful. Whether it is wise is Kas's
+    call, and it is the single biggest scope decision in this lane.</li>
+  <li><b>Deliverability is the real risk and needs an owner.</b>
+    Lane A mails people who ignored four or five emails, and 16.2 percent of everyone who replied
+    asked to be removed. The eight-plus rotating sending domains are the asset at risk. Needs
+    batch caps, a per-domain daily ceiling, and a complaint-rate tripwire that halts the lane
+    automatically. Nobody owns this yet.</li>
+  <li><b>The suppression list must be built and verified before a single send.</b>
+    87 explicit opt-outs are identifiable in <code>bison_replies</code> today, but there is no
+    confirmed suppression table joining them to the sending stack. Mailing someone who already
+    asked to be removed is the one failure here that is genuinely damaging rather than merely
+    unproductive.</li>
+  <li><b><code>{{specific_observation}}</code> is load-bearing and unbuilt.</b>
+    G1 is weak without it and it is the only real personalization Lane A has. The research agent
+    needs to produce it per lead at volume, which is a different problem from producing it per
+    deal.</li>
+  <li><b>Some leads tried to reach us and got nothing back.</b>
+    At least two replies say so directly: <em>“Have been trying to get hold of since long. No
+    one's seems to be replying from your end”</em> and <em>“Had sent a separate mail to you as
+    well quite a while back. Awaiting to hear back.”</em> These are inbound-interest leaks, not
+    gone-cold leads. Sweep the reply corpus for unanswered interested replies before spending
+    anything on revival, because those are warmer than everything in Lane A.</li>
+  <li><b>Budget Lane A as a low-yield sweep.</b>
+    Expected 0.5 to 1 percent reply against a 0.72 to 1.86 percent baseline. Worth doing. Not a
+    pipeline fix, and should not be presented as one.</li>
 </ol>
 
 <footer>
