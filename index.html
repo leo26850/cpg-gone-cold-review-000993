@@ -110,7 +110,7 @@
     <span class="tag">Drafted <b>2026-07-28</b></span>
     <span class="tag">Status <b>draft for Kas review</b></span>
     <span class="tag">Plane <b>CPG-180</b>, <b>CPG-104</b></span>
-    <span class="tag">Lane A <b>4 emails, Julieta</b></span>
+    <span class="tag">Lane A <b>4 + 4, Julieta</b></span>
     <span class="tag">Lane B <b>7 + 6, Krik</b></span>
   </div>
 </header>
@@ -125,7 +125,8 @@
         <td>Events, from call notes.</td></tr>
     <tr><th>Personalization</th><td>Enrichment and research only.</td><td>Quotes the prospect back
         to themselves.</td></tr>
-    <tr><th>Emails</th><td>4 (G1 to G4), roughly 31 days.</td><td>7 triggers + 6 follow-ups.</td></tr>
+    <tr><th>Emails</th><td>4 (G1 to G4) + 4 follow-ups (FG1 to FG4), ending in a removal email.
+        Roughly 31 days, or 45 with bumps.</td><td>7 triggers + 6 follow-ups.</td></tr>
     <tr><th>Calibrated against</th><td><b>600,887 sends, 1,800 replies.</b> A real sent-email
         corpus.</td><td>199 cold-cohort calls. No sent-email corpus exists.</td></tr>
   </tbody>
@@ -299,6 +300,131 @@ If either happens, reply to this email and it picks straight back up.
     without us needing a trigger feed we do not have. No guilt language, no last-chance framing,
     no fake deadline. After G4 the record goes dormant and routes to the E7 annual note, or to
     permanent suppression if anything on the suppression list fired.</div>
+  </details>
+</div>
+
+<h3>Lane A follow-ups</h3>
+<p class="lede">FG1 to FG3 are tiny threaded bumps. FG4 is different in kind: the closing email
+that removes the lead from the automation.</p>
+
+<div class="note">
+  <b>Volume warning, worth reading before these ship.</b> G1 to G4 is already a four-touch chase
+  at people who ignored four or five emails. Adding bumps takes Lane A to <b>seven touches</b> at
+  a population where 16.2 percent of everyone who replied asked to be removed. My recommendation,
+  and it is a recommendation not a refusal: run batch one as G-series only, measure complaint and
+  unsubscribe rate against baseline, then switch the bumps on for batch two if it holds. The
+  bumps are written either way. One batch cycle protects the domains; deciding by assumption
+  risks them.
+</div>
+
+<p><b>Why the bumps are this short.</b> Live ladder reply rates decay 1.86, 1.49, 0.76, 0.72
+percent by step. A long email at step 6 will not reverse that, and nobody writes paragraphs back
+to a cold email. Each bump does one job: make a one-word reply the easiest available action. All
+three are under 40 words.</p>
+
+<div class="fu">
+  <div class="hd">
+    <div class="eid">FG1 · follows G1</div>
+    <p class="etitle">One line is all I need</p>
+    <p class="trig"><b>Fires:</b> 3 days after G1 [DRAFT-CADENCE].</p>
+  </div>
+  <div class="subj"><span>Subject</span>Re: One idea for <span class="slot">{{brand_name}}</span></div>
+  <div class="body"><span class="slot">{{first_name}}</span>, one line is all I need.
+
+Worth a look for <span class="slot">{{brand_name}}</span>, or not for you?
+
+Either way I will act on it today.
+
+<span class="slot">{{sender_name}}</span></div>
+  <details><summary>Production notes <span class="wc">28 words</span></summary>
+    <div class="in">A pure bump. “Either way I will act on it today” is the entire value: it tells
+    them a reply ends the sequence, which is the only thing a cold lead actually wants from us. It
+    must be true, so a “not for you” reply moves the record to dormant that same day.</div>
+  </details>
+</div>
+
+<div class="fu">
+  <div class="hd">
+    <div class="eid">FG2 · follows G2</div>
+    <p class="etitle">No answer is an answer</p>
+    <p class="trig"><b>Fires:</b> 4 days after G2 [DRAFT-CADENCE].</p>
+  </div>
+  <div class="subj"><span>Subject</span>Re: Yes or no is fine</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+No answer is an answer, and I will take it as a no on <span class="slot">{{close_date}}</span>.
+
+If that is wrong, one word and I will send the page instead.
+
+<span class="slot">{{sender_name}}</span></div>
+  <details><summary>Production notes <span class="wc">35 words</span></summary>
+    <div class="in">“No answer is an answer” does the work a guilt-trip would do in worse copy,
+    without the guilt. The named date is a REAL internal action, not a deadline device: on
+    <span class="slot">{{close_date}}</span> the record actually closes. If the team does not close
+    it, this is fake urgency and it is banned under the global rules. Set the date to the G3 send
+    date so the two stay consistent.</div>
+  </details>
+</div>
+
+<div class="fu">
+  <div class="hd">
+    <div class="eid">FG3 · follows G3<span class="gate">Engagement-gated</span></div>
+    <p class="etitle">One question, then gone</p>
+    <p class="trig"><b>Fires:</b> 4 days after G3, only on engagement with G3. On no engagement,
+       send nothing. G3 opens with “no reply needed” and chasing a reply to it breaks the promise
+       the email is built on.</p>
+  </div>
+  <div class="subj"><span>Subject</span>Re: For <span class="slot">{{brand_name}}</span>, nothing needed</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+One question and then I will leave this alone.
+
+Is affiliate worth a conversation for <span class="slot">{{brand_name}}</span> this year, yes or no?
+
+<span class="slot">{{sender_name}}</span></div>
+  <details><summary>Production notes <span class="wc">27 words</span></summary>
+    <div class="in"><b>The engagement gate is internal and must never be referenced in the copy.</b>
+    Writing “I saw you opened this” tells the reader they are being tracked, which reliably costs
+    more replies than the personalization gains and invites a question nobody wants to field. The
+    gate decides whether to send; it never appears in the words.</div>
+  </details>
+</div>
+
+<div class="fu">
+  <div class="hd">
+    <div class="eid">FG4 · follows G4<span class="gate">Terminal</span></div>
+    <p class="etitle">The closing and removal email</p>
+    <p class="trig"><b>Fires:</b> 5 days after G4 [DRAFT-CADENCE]. <b>The last thing Lane A ever
+       sends.</b> Not a bump, makes no argument. Sending it is the act of removing them from the
+       automation.</p>
+  </div>
+  <div class="subj"><span>Subject</span>Re: Closing the file</div>
+  <div class="body">Hi <span class="slot">{{first_name}}</span>,
+
+Last email from me, and this one is only housekeeping.
+
+I have taken <span class="slot">{{brand_name}}</span> off our outreach list, so nothing further will come from us and there is nothing for you to do.
+
+If it is ever useful, reply to this one and it reopens. Otherwise, all the best with the year.
+
+<span class="slot">{{sender_name}}</span></div>
+  <details><summary>Production notes <span class="wc">54 words</span></summary>
+    <div class="in"><b>The claim must be literally true at send time.</b> The record is removed
+    from the automation as part of sending this, not after someone gets round to it. If the copy
+    says “I have taken you off our list” and the sequence keeps running, that is worse than never
+    sending it, because it converts a passive non-responder into someone with a documented reason
+    to complain.<br><br>
+    Why send it rather than just go silent, which is the obvious alternative: it is the cheapest
+    deliverability instrument in the lane. 16.2 percent of everyone who replied asked to be
+    removed, so the intent to complain is already there and mostly unexpressed. A graceful,
+    unprompted exit converts a share of those people from future spam-complainers into neutral,
+    and complaints are what cost sending domains. The door is left open with a single clause and
+    no ask attached, which is the only reason to keep the reply line at all.<br><br>
+    No pitch, no calendar link, no artifact, no last-chance framing. Anything persuasive turns it
+    back into a chase and forfeits the benefit. Against G4, which looks similar at a glance: G4 is
+    the last persuasive touch and names the two reasons brands come back; FG4 is the
+    administrative confirmation that the persuasion has stopped. They work as a pair only because
+    the second one is genuinely empty of selling.</div>
   </details>
 </div>
 
@@ -589,18 +715,22 @@ Krik</div>
   <div class="subj"><span>Subject</span>Re: Something for <span class="slot">{{brand_name}}</span>, no reply needed</div>
   <div class="body">Hi <span class="slot">{{first_name}}</span>,
 
-You had a look at the <span class="slot">{{publisher_descriptor}}</span> note, so I will ask one question and then leave it alone.
+One question on the <span class="slot">{{publisher_descriptor}}</span> note and then I will leave it alone.
 
 Is affiliate something you are revisiting for <span class="slot">{{brand_name}}</span> this year, or should I stop sending these?
 
 Either answer is genuinely useful to me.
 
 Krik</div>
-  <details><summary>Production notes <span class="wc">54 words</span></summary>
+  <details><summary>Production notes <span class="wc">52 words</span></summary>
     <div class="in">A permission-to-close question, which converts a non-answer into a real one and
     gives them a dignified way to end it. “Either answer is genuinely useful” has to be true in
     practice: a “stop” reply moves the record to E7-only immediately, and if it does not, this
-    email is a lie.</div>
+    email is a lie.<br><br>
+    <b>Corrected 2026-07-28.</b> The first draft opened “You had a look at the note”, which
+    announces to the reader that their opens are being tracked. That reliably costs more replies
+    than the personalization gains. Same rule as FG3: the engagement gate decides whether to send,
+    and never appears in the words.</div>
   </details>
 </div>
 
@@ -827,6 +957,7 @@ Krik</div>
     <tr><td><code>{{sender_name}}</code></td><td>Ops</td><td>Defaults to Julieta Oyanedel. Never Krik in Lane A</td></tr>
     <tr><td><code>{{specific_observation}}</code></td><td>Research agent</td><td>G1. Must be real and checkable. The only genuine personalization in this lane</td></tr>
     <tr><td><code>{{proof_line}}</code></td><td>Selection by vertical</td><td>G3. Whitelist only. Skip G3 rather than send a weak one</td></tr>
+    <tr><td><code>{{close_date}}</code></td><td>Computed, set to the G3 send date</td><td>FG2 only. A REAL close date. The record must actually close on it</td></tr>
   </tbody>
 </table>
 
